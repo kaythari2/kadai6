@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*================================== home
+*/
+
+.car #exhibit_bid_list {
+    width: 800px;
+}
+.car .searchQBox {
+    background: #FFF;
+    border: 2px solid #ccc;
+    float: left;
+    padding: 8px 10px;
+    margin-right: 10px;
+}
+.car .searchQBox th {
+    padding: 0px 10px;
+}

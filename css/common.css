@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/*================================== reset
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, address,
+abbr, code, pre, samp, blockquote, q, cite,
+img, del, ins, dfn, var, strong, em, small, b, i, sub, sup,
+dl, dt, dd, ol, ul, li,
+form, fieldset, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, dialog, figcaption, figure, footer, header,
+hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-style: normal; vertical-align: baseline; background: transparent;}
+
+article, aside, details, dialog,
+figcaption, figure, footer, header, hgroup, nav, section { display: block;}
+
+blockquote, q { quotes: none;}
+
+/*================================== common
+*/
+
+body,button {
+	cursor: auto;
+	color: #333;
+	font: normal normal 12px/1.5 Meiryo, "メイリオ", "Hiragino Kaku Gothic Pro W3", "ヒラギノ角ゴ Pro W3", Arial, Helvetica, "MS PGothic", "ＭＳ Ｐゴシック", Osaka, sans-serif;
+	letter-spacing: 0;
+	word-spacing: 0.1em;
+	background:#f8f8f8;
+}
+button { cursor: pointer;}
+
+h1 { padding: 15px 0 10px;}
+h2,h3,h4,h5,h6 { font-weight: bold; padding: 10px 0;}
+
+hr { display: none;}
+
+a img { border: none;}
+
+a			{ color: #039; text-decoration: underline; /*vertical-align: baseline;*/ vertical-align: middle; cursor: pointer; padding:3px;}
+a:visited	{ color: #039;}
+a:hover		{ color: #039; text-decoration: none;}
+a:active	{ color: #039;}
+a:focus		{ color: #039;}
+
+p { padding: 5px 0;}
+
+dl,ul,ol { padding: 0; margin: 0;}
+ul { list-style: none;}
+ol { list-style: decimal; padding-left: 2em;}
+dt { font-weight: bold;}
+
+ins { text-decoration: none;}
+mark { background-color: #ff9; color: #000; font-style:italic; font-weight: bold;}
+del { text-decoration: line-through;}
+abbr[title], dfn[title] { border-bottom: 1px dotted #333; cursor:help;}
+
+embed, object, img { vertical-align: middle;}
+embed, object { outline: none;}
+img { border: none; color: #333; background: transparent;}
+hr { display: none;}
+input, select { vertical-align: middle; margin-bottom: 3px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; border:1px solid #ccc;}
+
+table { border-collapse: collapse; border-spacing: 0; margin: 10px auto;}
+th, td { vertical-align: middle; text-align: left; border: 1px solid #ccc; padding: 0;}
+thead th,
+thead td { text-align: center;}
+th { vertical-align: top; font-weight: bold;}
+td { vertical-align: top; padding: 2px 10px;}
+td ul, td dl { height: auto;}
+
+form { padding: 10px 0; margin: 0;}
+fieldset { border: none; padding: 0; margin: 0;}
+legend { padding: 0 0 10px; margin: 0;}
+label { cursor: pointer;}
+input { padding: 2px;}
+input[type="text"],input[type="password"],textarea { box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; border: 1px solid #ccc; font-size:12px;}
+input[type="button"] { padding: 0 2px;}
+button { vertical-align: middle; padding:1px;}
+select option { padding: 0 5px;}
+
+
+/*---------------------------------- cleaarfix
+*/
+
+section:after,
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+section,
+.clearfix { display: inline-block;}
+/* for IE7 */
+
+/* Holly Hack Targets IE Win only \*/
+* html section,
+* html .clearfix { height: 1%;}
+section,
+.clearfix { display: block;}
+/* End Holly Hack */
+
+.clr { clear:both;}
+
+
+/*================================== err
+*/
+
+.err_box {
+    color: #cd0a0a;
+    border: solid 2px #cd0a0a;
+    background-color: #fef1ec;
+    margin: 10px auto;
+    padding: 2px 50px;
+    border-radius: 5px;
+}
+
+.err_box li {
+    list-style-type: disc;
+}
+
+.err {
+    background-color: #FF9999 !important;
+}
+
+.err_txt {
+    color: #cd0a0a !important;
+}
+
+.required {
+    background-color: #FFDFEF !important;
+}
+
+.memoBox .EditBtnArea { float:left;}
+.memoBox .EditBtnArea .btnBlack { width:60px; border-radius:0; -webkit-border-radius:0; -moz-border-radius:0;}
+.memoBox .EditBtnArea .btnBlack span { background:url(../images/ic_point2.png) no-repeat left 1px; padding-left:18px;}
